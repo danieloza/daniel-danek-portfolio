@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630" fill="none">
+  <rect width="1200" height="630" fill="#F4EFE6"/>
+  <circle cx="1018" cy="108" r="204" fill="#0D6B5C" fill-opacity="0.1"/>
+  <circle cx="165" cy="559" r="201" fill="#D56D3B" fill-opacity="0.12"/>
+  <rect x="62" y="62" width="1076" height="506" rx="34" fill="#FFF8EF" stroke="#E4D9CB"/>
+  <rect x="94" y="94" width="116" height="116" rx="28" fill="#1D1A17"/>
+  <path d="M118 179V125H143.74C158.05 125 166.6 133.01 166.6 145.88C166.6 158.66 158.05 166.76 143.74 166.76H130.42V179H118Z" fill="#FFF8EF"/>
+  <path d="M173 179V125H183.8V179H173Z" fill="#D56D3B"/>
+  <path d="M170.3 179H191.9V168.2H170.3V179Z" fill="#0D6B5C"/>
+  <text x="94" y="292" fill="#0D6B5C" font-family="Space Grotesk, Arial, sans-serif" font-size="22" letter-spacing="6">PYTHON BACKEND DEVELOPER</text>
+  <text x="94" y="392" fill="#1D1A17" font-family="Georgia, serif" font-size="72" font-weight="700">Daniel Danek</text>
+  <text x="94" y="462" fill="#5F5952" font-family="Space Grotesk, Arial, sans-serif" font-size="31">FastAPI, APIs, automation, business workflows, and practical AI integrations.</text>
+  <text x="94" y="516" fill="#5F5952" font-family="Space Grotesk, Arial, sans-serif" font-size="31">github.com/danieloza</text>
+</svg>
