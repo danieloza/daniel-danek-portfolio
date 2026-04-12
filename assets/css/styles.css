@@ -238,6 +238,20 @@ a {
   box-shadow: var(--shadow);
 }
 
+.project-proof {
+  margin: 4px 0 0;
+  border: 1px solid rgba(29, 26, 23, 0.1);
+  border-radius: 20px;
+  overflow: hidden;
+  background: rgba(255, 255, 255, 0.5);
+}
+
+.project-proof img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
 .project-card-featured {
   background:
     linear-gradient(135deg, rgba(13, 107, 92, 0.12), transparent 50%),
