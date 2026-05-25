@@ -249,7 +249,10 @@ a {
 .project-proof img {
   display: block;
   width: 100%;
+  aspect-ratio: 16 / 9;
   height: auto;
+  object-fit: cover;
+  object-position: top center;
 }
 
 .project-card-featured {
