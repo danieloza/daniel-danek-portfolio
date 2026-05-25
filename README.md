@@ -2,7 +2,7 @@
 
 Static portfolio site presenting Python backend work, selected AI systems repositories, and contact links.
 
-The portfolio uses a company-neutral timeline: it references public projects, dates, technical focus areas, and business workflow domains without naming private collaboration partners.
+The portfolio uses a company-neutral timeline: it references public projects, DANIELOZA.AI, Danex, dates, technical focus areas, and business workflow domains without naming private collaboration partners.
 
 ## Run locally
 
