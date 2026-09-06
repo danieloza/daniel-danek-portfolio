@@ -15,6 +15,7 @@ The site is optimized to present a backend-first profile focused on:
 - FastAPI services
 - AI governance platforms
 - AI runtime control planes
+- private, self-hostable AI workspaces with bring-your-own providers
 - RAG and agentic AI workflow systems
 - secure tool access and MCP governance
 - auditability and replay workflows
@@ -23,7 +24,7 @@ The site is optimized to present a backend-first profile focused on:
 - practical backend systems around AI
 - company-neutral experience timeline
 
-Current project hierarchy starts with AGIP as the flagship AI governance platform, then presents supporting systems such as MCP Security Gateway, Automation Control Plane, Agent Control Plane, RAG services, observability, and business workflow tools.
+Current project hierarchy starts with Regulated AI Agent Platform and AGIP as the two governance flagships. MeshKeep follows as the strongest end-to-end product, ahead of the narrower gateways, control planes, RAG services, observability, and business workflow tools.
 
 ## Deploy
 

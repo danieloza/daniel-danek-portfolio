@@ -291,6 +291,12 @@ a {
   font-weight: 700;
 }
 
+.project-links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px 18px;
+}
+
 .split-layout {
   display: grid;
   grid-template-columns: 1.2fr 0.9fr;
