@@ -3,468 +3,140 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Daniel Danek | Python Backend Engineer for AI Governance and Agent Systems</title>
-  <meta
-    name="description"
-    content="Python backend engineer focused on FastAPI, AI governance platforms, agent control planes, scoped tool access, auditability, replay workflows, and practical backend systems around AI."
-  >
-  <meta property="og:title" content="Daniel Danek | Python Backend Engineer for AI Governance and Agent Systems">
-  <meta
-    property="og:description"
-    content="FastAPI services, AI governance platforms, scoped agent access, replay workflows, audit trails, and practical backend engineering."
-  >
+  <meta name="color-scheme" content="light dark">
+  <title>Daniel Danek | Python Backend &amp; AI Engineer</title>
+  <meta name="description" content="Python backend and AI engineer. Explore my experience with Azure AI, FastAPI, RAG, secure agent systems, and practical business automation.">
+  <meta property="og:title" content="Daniel Danek | Python Backend &amp; AI Engineer">
+  <meta property="og:description" content="Python, Azure AI, and agent systems. Selected projects, engineering experience, and concrete examples of my work.">
   <meta property="og:type" content="website">
-  <meta property="og:image" content="./assets/images/og-card.svg">
+  <meta property="og:image" content="https://danieloza.github.io/daniel-danek-portfolio/assets/images/og-card.svg">
   <meta name="twitter:card" content="summary_large_image">
-  <meta name="twitter:title" content="Daniel Danek | Python Backend Engineer for AI Governance and Agent Systems">
-  <meta
-    name="twitter:description"
-    content="FastAPI services, AI governance platforms, scoped agent access, replay workflows, audit trails, and practical backend engineering."
-  >
-  <meta name="twitter:image" content="./assets/images/og-card.svg">
-  <link rel="icon" href="./assets/images/monogram.svg" type="image/svg+xml">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link
-    href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;700&family=Fraunces:opsz,wght@9..144,600;9..144,700&display=swap"
-    rel="stylesheet"
-  >
+  <meta name="twitter:title" content="Daniel Danek | Python Backend &amp; AI Engineer">
+  <meta name="twitter:description" content="Python, Azure AI, and agent systems. Selected projects and engineering experience.">
+  <meta name="twitter:image" content="https://danieloza.github.io/daniel-danek-portfolio/assets/images/og-card.svg">
+  <link rel="icon" href="./assets/images/daniel-avatar.png" type="image/png" sizes="320x320">
+  <link rel="preload" href="./assets/fonts/geist-variable.woff2" as="font" type="font/woff2" crossorigin>
+  <script src="./assets/js/theme-init.js"></script>
   <link rel="stylesheet" href="./assets/css/styles.css">
+  <script src="./assets/js/main.js" defer></script>
 </head>
 <body>
-  <div class="page-shell">
+  <a class="skip-link" href="#main-content">Skip to content</a>
+  <div class="page-shell" id="top">
     <header class="site-header">
-      <a class="brand" href="#top" aria-label="Daniel Danek home">
-        <img src="./assets/images/monogram.svg" alt="" width="40" height="40">
-        <span>Daniel Danek</span>
-      </a>
-      <nav class="site-nav" aria-label="Main navigation">
-        <a href="#projects">Projects</a>
-        <a href="#stack">Stack</a>
-        <a href="#contact">Contact</a>
-      </nav>
+      <a class="brand" href="#top" aria-label="Daniel Danek home"><img src="./assets/images/daniel-avatar.png" alt="" width="32" height="32"><span>Daniel Danek</span></a>
+      <a class="text-link header-link" href="#contact">Contact <svg class="icon" aria-hidden="true"><use href="./assets/icons/tabler-sprite.svg#arrow-up-right"></use></svg></a>
     </header>
-
-    <main id="top">
-      <section class="hero">
+    <main id="main-content">
+      <section class="hero reveal" aria-labelledby="intro-heading">
         <div class="hero-copy">
-          <p class="eyebrow">Python Backend Engineer</p>
-          <h1>Backend systems for AI governance, agent control, and runtime safety.</h1>
-          <p class="hero-text">
-            I build Python services around FastAPI, scoped agent access, policy simulation,
-            audit trails, incidents, replay workflows, operator tooling, and practical control layers for AI systems.
-          </p>
+          <p class="role-label">Python Backend &amp; AI Engineer</p>
+          <h1 id="intro-heading">Hi, I'm Daniel.</h1>
+          <p class="hero-text">I build Python backends, AI agent systems, and Azure prototypes with clear permissions, traceable decisions, and automated tests.</p>
           <div class="hero-actions">
-            <a class="button button-primary" href="https://github.com/danieloza" target="_blank" rel="noreferrer">View GitHub</a>
-            <a class="button button-secondary" href="https://www.linkedin.com/in/daniel-danek-aa3853231/" target="_blank" rel="noreferrer">LinkedIn</a>
+            <a class="button button-primary" href="#projects">Explore projects <svg class="icon" aria-hidden="true"><use href="./assets/icons/tabler-sprite.svg#arrow-up-right"></use></svg></a>
+            <a class="button button-secondary" href="https://github.com/danieloza" target="_blank" rel="noopener noreferrer">View GitHub <svg class="icon" aria-hidden="true"><use href="./assets/icons/tabler-sprite.svg#arrow-up-right"></use></svg></a>
           </div>
         </div>
-        <aside class="hero-panel">
-          <div class="stat-card">
-            <span class="stat-label">Focus</span>
-            <strong>FastAPI, AI governance, scoped tool access, auditability, replay workflows, operator-facing agent systems</strong>
-          </div>
-          <div class="stat-card">
-            <span class="stat-label">Best fit</span>
-            <strong>AI Governance, Agentic Systems, Backend AI Platform, and Python Platform roles</strong>
-          </div>
-          <div class="stat-card">
-            <span class="stat-label">Based in</span>
-            <strong>Wroclaw, Poland</strong>
-          </div>
-        </aside>
+        <img class="avatar" src="./assets/images/daniel-avatar.png" width="112" height="112" alt="Daniel's GitHub profile illustration" fetchpriority="high">
       </section>
-
-      <section class="proof-strip" aria-label="Key profile highlights">
-        <article>
-            <span class="proof-number">AGIP</span>
-            <p>flagship AI governance platform combining agent auth, policy simulation, approvals, incidents, regression testing, observability, and enterprise governance layers</p>
-        </article>
-        <article>
-          <span class="proof-number">Ops</span>
-          <p>backend-first profile with approvals, audit trails, replay jobs, policy surfaces, and operator tooling</p>
-        </article>
-        <article>
-          <span class="proof-number">AI Ops</span>
-          <p>practical AI systems work with persistence, review workflows, incident handling, and operational visibility</p>
-        </article>
+      <section class="section about-section reveal" id="about" aria-labelledby="about-heading">
+        <h2 id="about-heading">About</h2>
+        <p>I work at the intersection of <strong>Python backend engineering and practical AI systems</strong>. My work spans Azure AI prototypes, RAG, controlled tool execution, and business automation. I care about what happens beyond the demo: who can access a tool, where an answer comes from, and how to test a decision.</p>
+        <p>Based near Wrocław, Poland. Open to fully remote engineering work.</p>
       </section>
-
-      <section class="section" id="projects">
-        <div class="section-heading">
-          <p class="eyebrow">Selected Projects</p>
-          <h2>Flagship platform first, supporting systems underneath.</h2>
+      <section class="section reveal" id="experience" aria-labelledby="experience-heading">
+        <h2 id="experience-heading">Current role</h2>
+        <p class="section-note">At Billennium, I focus on Python applications, Azure AI prototypes, and practical validation of agent workflows.</p>
+        <div class="experience-list">
+          <details class="experience-item">
+            <summary><span class="company-mark" aria-hidden="true">B</span><span class="experience-title"><span class="company-name">Billennium <svg class="icon chevron" aria-hidden="true"><use href="./assets/icons/tabler-sprite.svg#chevron-right"></use></svg></span><span class="job-title">AI Engineering Consultant · B2B</span></span><span class="experience-date">Jul 2026 - Present</span></summary>
+            <div class="experience-body">
+              <p>I work with <strong>Azure OpenAI and Azure AI Search</strong> on prototypes focused on answer provenance, access control, and quality testing, alongside automated tests and user-permission design.</p>
+              <p>Built a <strong>Python and JavaScript application</strong> that processes PDFs and an Excel catalog, records user decisions, and generates an output. Kept optional Azure OpenAI calls separate from local logic to make data transfers explicit.</p>
+              <p>I run and diagnose workloads on <strong>AKS</strong> and work with Terraform-defined infrastructure, including ACR, Key Vault, Managed Identity, and monitoring. Recent work includes resolving an <strong>AcrPull permission issue for the kubelet identity</strong> and verifying the path from deployment availability to a working application response.</p>
+              <p>Validated an AI-assisted SDLC demonstrator on Azure VM / Static Web Apps using Node.js, automated tests, and Playwright. Mapped the task-to-code, test, review, and human-decision flow. Identified fixture-backed steps and unconfigured live Jira, GitHub, and model integrations; prepared AS-IS / TO-BE and reuse assessments.</p>
+              <p>I map AI Factory requirements to reusable components and assess what a demonstrator actually proves, distinguishing fixture behavior, a working PoC, and client-ready integrations. Client and internal demonstrator names are confidential.</p>
+              <div class="tags"><span>Azure OpenAI</span><span>Azure AI Search</span><span>AKS</span><span>ACR</span><span>Terraform</span><span>Playwright</span></div>
+            </div>
+          </details>
         </div>
+      </section>
+      <section class="section reveal" id="stack" aria-labelledby="stack-heading">
+        <h2 id="stack-heading">Stack</h2>
+        <div class="skill-groups">
+          <div><h3>Backend</h3><div class="tags skills"><span>Python</span><span>FastAPI</span><span>PostgreSQL</span><span>SQL</span><span>Redis</span><span>REST APIs</span><span>Pytest</span></div></div>
+          <div><h3>AI &amp; agents</h3><div class="tags skills"><span>Azure OpenAI</span><span>Azure AI Search</span><span>RAG</span><span>MCP</span><span>LangChain</span><span>FAISS</span><span>Policy &amp; approvals</span></div></div>
+          <div><h3>Cloud &amp; delivery</h3><div class="tags skills"><span>Docker</span><span>AKS workloads</span><span>ACR</span><span>Terraform</span><span>Key Vault</span><span>Managed Identity</span><span>Microsoft Entra ID</span><span>Git</span><span>Playwright</span></div></div>
+          <div><h3>Application tooling</h3><div class="tags skills"><span>JavaScript</span><span>TypeScript</span><span>React</span><span>Node.js</span><span>SQLite</span><span>Bash</span><span>Azure Static Web Apps</span></div></div>
+        </div>
+        <p class="section-note">My Kubernetes work focuses on running and diagnosing AKS workloads. Terraform experience includes working with existing infrastructure definitions.</p>
+      </section>
+      <section class="section projects-section reveal" id="projects" aria-labelledby="projects-heading">
+        <div class="projects-intro"><span class="section-badge">Selected projects</span><h2 id="projects-heading">Things I've built.</h2><p>Independent projects in AI governance, retrieval, and developer tooling. Explore the code, architecture, and tests.</p></div>
         <div class="project-grid">
-          <article class="project-card project-card-featured">
-            <div class="project-meta">
-              <span>FastAPI + React</span>
-              <span>Regulated AI</span>
-              <span>Governance</span>
-            </div>
-            <h3>Regulated AI Agent Platform</h3>
-            <p>
-              Flagship governance platform for regulated AI assistants with source-bound RAG,
-              scoped tool access, human approvals, policy replay and diff, explainable risk scoring,
-              audit evidence exports, and a controlled Excel Governance Registry workflow.
-            </p>
-            <figure class="project-proof">
-              <img
-                src="https://raw.githubusercontent.com/danieloza/regulated-ai-agent-platform/main/docs/screenshots/01-dashboard.png"
-                alt="Regulated AI Agent Platform operator dashboard"
-                width="1600"
-                height="1000"
-              >
-            </figure>
-            <a href="https://github.com/danieloza/regulated-ai-agent-platform" target="_blank" rel="noreferrer">Open flagship repository</a>
-          </article>
-
-          <article class="project-card project-card-featured">
-            <div class="project-meta">
-              <span>FastAPI</span>
-              <span>AI Governance</span>
-              <span>Agent Systems</span>
-            </div>
-            <h3>AGIP - Agentic Governance Intelligence Platform</h3>
-            <p>
-              Local-first AI governance platform for autonomous agents with scoped access,
-              policy simulation, approvals, audit logs, redaction, incidents, regression testing,
-              observability, inference readiness, and enterprise governance layers before agents touch business systems.
-            </p>
-            <figure class="project-proof">
-              <img
-                src="./assets/images/agip-overview.png"
-                alt="AGIP operator dashboard with enterprise governance layers"
-                width="1600"
-                height="1100"
-              >
-            </figure>
-            <a href="https://github.com/danieloza/agentic-governance-intelligence-platform" target="_blank" rel="noreferrer">Open repository</a>
-          </article>
-
-          <article class="project-card project-card-featured">
-            <div class="project-meta">
-              <span>TypeScript + React</span>
-              <span>Cloudflare Workers</span>
-              <span>Private AI</span>
-            </div>
-            <h3>MeshKeep</h3>
-            <p>
-              Self-hostable AI workspace for small teams with private-by-default projects,
-              role-based sharing, explicit file context, encrypted bring-your-own-provider keys,
-              usage limits, audit trails, D1/R2 persistence, and a revocable Windows folder-sync agent.
-            </p>
-            <figure class="project-proof">
-              <img
-                src="https://raw.githubusercontent.com/danieloza/meshkeep/main/public/og-card.svg"
-                alt="MeshKeep private AI workspace product overview"
-                width="1600"
-                height="900"
-              >
-            </figure>
-            <div class="project-links">
-              <a href="https://github.com/danieloza/meshkeep" target="_blank" rel="noreferrer">Open repository</a>
-              <a href="https://github.com/danieloza/meshkeep#product-tour" target="_blank" rel="noreferrer">Watch product tour</a>
-            </div>
-          </article>
-
           <article class="project-card">
-            <div class="project-meta">
-              <span>FastAPI</span>
-              <span>Governance</span>
-              <span>MTA</span>
-            </div>
-            <h3>Agent Governance Gateway</h3>
-            <p>
-              Portfolio-grade FastAPI prototype for enterprise AI agent governance. It supports agent
-              registration, human approval, short-lived scoped JWTs, revocation, multi-tenant isolation,
-              PII redaction, policy-enforced tool access, audit logs, and an executive dashboard.
-            </p>
-            <figure class="project-proof">
-              <img
-                src="./assets/images/agent-governance-gateway.png"
-                alt="Agent Governance Gateway dashboard screenshot"
-                width="1600"
-                height="1000"
-              >
-            </figure>
-            <a href="https://github.com/danieloza/agent-governance-gateway" target="_blank" rel="noreferrer">Open repository</a>
+            <a class="project-image" href="https://github.com/danieloza/regulated-ai-agent-platform" target="_blank" rel="noopener noreferrer" aria-label="Explore Regulated AI Agent Platform"><img src="./assets/images/regulated-ai-dashboard.png" alt="Regulated AI Agent Platform operator dashboard" width="1600" height="1000" loading="lazy"></a>
+            <div class="project-content"><p class="project-kind">Independent R&amp;D</p><h3>Regulated AI Agent Platform</h3><p>Source-bound RAG, scoped tools, human approvals, policy replay and diff, risk scoring, and exportable audit evidence.</p><div class="tags"><span>Python</span><span>FastAPI</span><span>React</span><span>RAG</span></div><a class="project-link" href="https://github.com/danieloza/regulated-ai-agent-platform" target="_blank" rel="noopener noreferrer"><svg class="icon" aria-hidden="true"><use href="./assets/icons/tabler-sprite.svg#brand-github"></use></svg>Source <svg class="icon" aria-hidden="true"><use href="./assets/icons/tabler-sprite.svg#arrow-up-right"></use></svg></a></div>
           </article>
-
-          <article class="project-card project-card-featured">
-            <div class="project-meta">
-              <span>FastAPI</span>
-              <span>Control Plane</span>
-              <span>AI Ops</span>
-            </div>
-            <h3>Agent Control Plane</h3>
-            <p>
-              Production-oriented FastAPI control plane for AI agents with persistent runtime state,
-              worker-backed replay jobs, audit trail, operator notes, tenant-aware access, metrics,
-              and a simplified operator review cockpit.
-            </p>
-            <figure class="project-proof">
-              <img
-                src="./assets/images/agent-control-plane-cockpit.png"
-                alt="Agent Control Plane operator cockpit screenshot"
-                width="1600"
-                height="1200"
-              >
-            </figure>
-            <a href="https://github.com/danieloza/agent-control-plane" target="_blank" rel="noreferrer">Open repository</a>
-          </article>
-
           <article class="project-card">
-            <div class="project-meta">
-              <span>FastAPI</span>
-              <span>RAG</span>
-              <span>Evaluation</span>
-            </div>
-            <h3>Danex RAG Service</h3>
-            <p>
-              Product-style hybrid RAG backend combining semantic retrieval with SQL-backed answers,
-              ingestion, FAISS indexing, citations with scores, route transparency, query history,
-              ingestion history, and evaluation signals.
-            </p>
-            <figure class="project-proof">
-              <img
-                src="./assets/images/danex-rag-service.png"
-                alt="Danex RAG Service console screenshot"
-                width="1600"
-                height="900"
-              >
-            </figure>
-            <a href="https://github.com/danieloza/danex-rag-service" target="_blank" rel="noreferrer">Open repository</a>
+            <a class="project-image" href="https://github.com/danieloza/agentic-governance-intelligence-platform" target="_blank" rel="noopener noreferrer" aria-label="Explore AGIP"><img src="./assets/images/agip-overview.png" alt="AGIP governance dashboard" width="1600" height="1100" loading="lazy"></a>
+            <div class="project-content"><p class="project-kind">Independent R&amp;D</p><h3>AGIP</h3><p>A local-first agent governance platform with policy simulation, access scopes, approvals, redaction, incidents, and regression checks.</p><div class="tags"><span>FastAPI</span><span>Governance</span><span>Agents</span></div><a class="project-link" href="https://github.com/danieloza/agentic-governance-intelligence-platform" target="_blank" rel="noopener noreferrer"><svg class="icon" aria-hidden="true"><use href="./assets/icons/tabler-sprite.svg#brand-github"></use></svg>Source <svg class="icon" aria-hidden="true"><use href="./assets/icons/tabler-sprite.svg#arrow-up-right"></use></svg></a></div>
           </article>
-
           <article class="project-card">
-            <div class="project-meta">
-              <span>FastAPI</span>
-              <span>MCP</span>
-              <span>Security</span>
-            </div>
-            <h3>MCP Security Gateway</h3>
-            <p>
-              Security-first FastAPI gateway for controlling agent access to MCP tools with auth,
-              deterministic policy checks, approval routing, rate limiting, redacted audit logs,
-              and incident creation for unsafe requests.
-            </p>
-            <figure class="project-proof">
-              <img
-                src="./assets/images/mcp-security-gateway.png"
-                alt="MCP Security Gateway dashboard screenshot"
-                width="1600"
-                height="900"
-              >
-            </figure>
-            <a href="https://github.com/danieloza/mcp-security-gateway" target="_blank" rel="noreferrer">Open repository</a>
+            <a class="project-image" href="https://github.com/danieloza/meshkeep" target="_blank" rel="noopener noreferrer" aria-label="Explore MeshKeep"><img src="./assets/images/meshkeep.svg" alt="MeshKeep private AI workspace product overview" width="1600" height="900" loading="lazy"></a>
+            <div class="project-content"><p class="project-kind">Independent product</p><h3>MeshKeep</h3><p>A self-hostable AI workspace for small teams, with private projects, role-based sharing, encrypted provider keys, usage limits, and folder sync.</p><div class="tags"><span>TypeScript</span><span>React</span><span>Cloudflare</span></div><div class="project-links"><a class="project-link" href="https://github.com/danieloza/meshkeep" target="_blank" rel="noopener noreferrer"><svg class="icon" aria-hidden="true"><use href="./assets/icons/tabler-sprite.svg#brand-github"></use></svg>Source</a><a class="project-link secondary-link" href="https://github.com/danieloza/meshkeep#product-tour" target="_blank" rel="noopener noreferrer">Product tour <svg class="icon" aria-hidden="true"><use href="./assets/icons/tabler-sprite.svg#arrow-up-right"></use></svg></a></div></div>
           </article>
-
           <article class="project-card">
-            <div class="project-meta">
-              <span>Python</span>
-              <span>Observability</span>
-              <span>AI Workflows</span>
-            </div>
-            <h3>AI Workflow Observatory</h3>
-            <p>
-              Local-first observability dashboard for AI-assisted engineering workflows. It turns raw
-              coding-session logs into workflow phases, verification quality, risk flags, cost visibility,
-              project summaries, and session traces.
-            </p>
-            <figure class="project-proof">
-              <img
-                src="./assets/images/ai-workflow-observatory.png"
-                alt="AI Workflow Observatory dashboard screenshot"
-                width="1600"
-                height="900"
-              >
-            </figure>
-            <a href="https://github.com/danieloza/ai-workflow-observatory" target="_blank" rel="noreferrer">Open repository</a>
+            <a class="project-image" href="https://github.com/danieloza/danex-rag-service" target="_blank" rel="noopener noreferrer" aria-label="Explore Danex RAG Service"><img src="./assets/images/danex-rag-service.png" alt="Danex RAG Service retrieval console" width="1600" height="900" loading="lazy"></a>
+            <div class="project-content"><p class="project-kind">Independent R&amp;D</p><h3>Danex RAG Service</h3><p>A hybrid RAG backend combining semantic retrieval and SQL-backed answers, with citations, ingestion history, and evaluation signals.</p><div class="tags"><span>FastAPI</span><span>FAISS</span><span>SQL</span><span>Evaluation</span></div><a class="project-link" href="https://github.com/danieloza/danex-rag-service" target="_blank" rel="noopener noreferrer"><svg class="icon" aria-hidden="true"><use href="./assets/icons/tabler-sprite.svg#brand-github"></use></svg>Source <svg class="icon" aria-hidden="true"><use href="./assets/icons/tabler-sprite.svg#arrow-up-right"></use></svg></a></div>
           </article>
-
           <article class="project-card">
-            <div class="project-meta">
-              <span>FastAPI</span>
-              <span>Automation</span>
-              <span>Approvals</span>
-            </div>
-            <h3>Automation Control Plane</h3>
-            <p>
-              Backend-first control layer for automation workflows with tenant-aware access,
-              approval queues, usage limits, execution audit logs, and operator review surfaces.
-            </p>
-            <figure class="project-proof">
-              <img
-                src="./assets/images/automation-control-plane.png"
-                alt="Automation Control Plane dashboard screenshot"
-                width="1440"
-                height="1000"
-              >
-            </figure>
-            <a href="https://github.com/danieloza/automation-control-plane" target="_blank" rel="noreferrer">Open repository</a>
+            <a class="project-image" href="https://github.com/danieloza/mcp-security-gateway" target="_blank" rel="noopener noreferrer" aria-label="Explore MCP Security Gateway"><img src="./assets/images/mcp-security-gateway.png" alt="MCP Security Gateway tool-access dashboard" width="1600" height="900" loading="lazy"></a>
+            <div class="project-content"><p class="project-kind">Independent R&amp;D</p><h3>MCP Security Gateway</h3><p>Deterministic policy checks around agent tool access, with authentication, approval routing, rate limits, redacted audit logs, and incidents.</p><div class="tags"><span>Python</span><span>FastAPI</span><span>MCP</span><span>Security</span></div><a class="project-link" href="https://github.com/danieloza/mcp-security-gateway" target="_blank" rel="noopener noreferrer"><svg class="icon" aria-hidden="true"><use href="./assets/icons/tabler-sprite.svg#brand-github"></use></svg>Source <svg class="icon" aria-hidden="true"><use href="./assets/icons/tabler-sprite.svg#arrow-up-right"></use></svg></a></div>
           </article>
-
           <article class="project-card">
-            <div class="project-meta">
-              <span>Python</span>
-              <span>Insights</span>
-              <span>Business AI</span>
-            </div>
-            <h3>Brand Insight Engine</h3>
-            <p>
-              Feedback intelligence pipeline that turns public customer feedback and market signals
-              into structured product, brand, and marketing insights.
-            </p>
-            <figure class="project-proof">
-              <img
-                src="./assets/images/brand-insight-engine.png"
-                alt="Brand Insight Engine insight dashboard visual"
-                width="1440"
-                height="900"
-              >
-            </figure>
-            <a href="https://github.com/danieloza/brand-insight-engine" target="_blank" rel="noreferrer">Open repository</a>
+            <a class="project-image" href="https://github.com/danieloza/ai-workflow-observatory" target="_blank" rel="noopener noreferrer" aria-label="Explore AI Workflow Observatory"><img src="./assets/images/ai-workflow-observatory.png" alt="AI Workflow Observatory session and quality dashboard" width="1600" height="900" loading="lazy"></a>
+            <div class="project-content"><p class="project-kind">Independent R&amp;D</p><h3>AI Workflow Observatory</h3><p>Turns coding-session logs into workflow phases, verification signals, risk flags, cost visibility, and inspectable execution traces.</p><div class="tags"><span>Python</span><span>Observability</span><span>AI workflows</span></div><a class="project-link" href="https://github.com/danieloza/ai-workflow-observatory" target="_blank" rel="noopener noreferrer"><svg class="icon" aria-hidden="true"><use href="./assets/icons/tabler-sprite.svg#brand-github"></use></svg>Source <svg class="icon" aria-hidden="true"><use href="./assets/icons/tabler-sprite.svg#arrow-up-right"></use></svg></a></div>
           </article>
-
-          <article class="project-card project-card-featured">
-            <div class="project-meta">
-              <span>FastAPI</span>
-              <span>React</span>
-              <span>Agentic Workflow</span>
-            </div>
-            <h3>Agentic 3D Asset Studio</h3>
-            <p>
-              Local-first AI workflow platform for 3D asset generation with provider abstraction, real GLB preview,
-              metadata, quality reports, quality gates, run replay, observability, storage inspection,
-              ZIP packages, and agent-ready API endpoints.
-            </p>
-            <figure class="project-proof">
-              <img
-                src="./assets/images/agentic-3d-asset-studio.png"
-                alt="Agentic 3D Asset Studio generate workspace screenshot"
-                width="1600"
-                height="900"
-              >
-            </figure>
-            <a href="https://github.com/danieloza/agentic-3d-asset-studio" target="_blank" rel="noreferrer">Open repository</a>
-          </article>
-
-          <article class="project-card">
-            <div class="project-meta">
-              <span>React</span>
-              <span>Agent Governance</span>
-              <span>Product UI</span>
-            </div>
-            <h3>AgentOps Control Hub</h3>
-            <p>
-              Premium React and TypeScript product surface for AI agent governance, approval queues,
-              secure tool access, audit logs, risk scoring, observability, and evaluation scorecards.
-            </p>
-            <figure class="project-proof">
-              <img
-                src="./assets/images/agentops-control-hub.png"
-                alt="AgentOps Control Hub product dashboard screenshot"
-                width="1600"
-                height="900"
-              >
-            </figure>
-            <a href="https://github.com/danieloza/agentops-control-hub" target="_blank" rel="noreferrer">Open repository</a>
-          </article>
-
         </div>
+        <details class="more-projects"><summary>More projects <svg class="icon chevron" aria-hidden="true"><use href="./assets/icons/tabler-sprite.svg#chevron-right"></use></svg></summary>
+          <div class="more-projects-list">
+            <a href="https://github.com/danieloza/agent-control-plane" target="_blank" rel="noopener noreferrer"><strong>Agent Control Plane</strong><span>Persistent runtime state, replay jobs, and an operator cockpit.</span></a>
+            <a href="https://github.com/danieloza/agent-governance-gateway" target="_blank" rel="noopener noreferrer"><strong>Agent Governance Gateway</strong><span>Scoped JWTs, approval flows, revocation, and tenant isolation.</span></a>
+            <a href="https://github.com/danieloza/automation-control-plane" target="_blank" rel="noopener noreferrer"><strong>Automation Control Plane</strong><span>Approval queues, usage limits, and execution audit logs.</span></a>
+            <a href="https://github.com/danieloza/brand-insight-engine" target="_blank" rel="noopener noreferrer"><strong>Brand Insight Engine</strong><span>Customer feedback transformed into structured business insights.</span></a>
+            <a href="https://github.com/danieloza/agentic-3d-asset-studio" target="_blank" rel="noopener noreferrer"><strong>Agentic 3D Asset Studio</strong><span>Provider abstraction, GLB previews, quality gates, and run replay.</span></a>
+            <a href="https://github.com/danieloza/agentops-control-hub" target="_blank" rel="noopener noreferrer"><strong>AgentOps Control Hub</strong><span>A React interface for approvals, audit logs, and agent governance.</span></a>
+          </div>
+        </details>
       </section>
-
-      <section class="section split-section" id="stack">
-        <div class="section-heading">
-          <p class="eyebrow">Stack</p>
-          <h2>What I actually use.</h2>
-        </div>
-        <div class="split-layout">
-          <div class="stack-cloud">
-            <span>Python</span>
-            <span>FastAPI</span>
-            <span>SQL</span>
-            <span>PostgreSQL</span>
-            <span>SQLite</span>
-            <span>Docker</span>
-            <span>Git</span>
-            <span>Pytest</span>
-            <span>Redis</span>
-            <span>MCP</span>
-            <span>LangChain</span>
-            <span>FAISS</span>
-            <span>REST APIs</span>
-            <span>Bash</span>
-          </div>
-          <div class="notes-panel">
-            <div>
-              <h3>Primary direction</h3>
-              <p>Python backend, API design, runtime control, operator workflows, automation, and testable business logic.</p>
-            </div>
-            <div>
-              <h3>Secondary edge</h3>
-              <p>Practical AI systems: control layers, retrieval-backed workflows, LLM-assisted tooling, internal operator products.</p>
-            </div>
-            <div>
-              <h3>What I am not selling as</h3>
-              <p>Backend-first systems profile. Not a generic fullstack pitch and not a pure data-science profile.</p>
-            </div>
-          </div>
-        </div>
+      <section class="section reveal" id="education" aria-labelledby="education-heading">
+        <h2 id="education-heading">Education</h2>
+        <div class="education-item"><span class="company-mark" aria-hidden="true">U</span><div><h3>University of Wrocław</h3><p>Master's studies in Psychology</p></div></div>
+        <div class="education-item"><span class="company-mark" aria-hidden="true">IT</span><div><h3>IT Technical School, Wrocław</h3><p>IT-focused secondary education</p></div></div>
       </section>
-
-      <section class="section timeline-section">
-        <div class="section-heading">
-          <p class="eyebrow">Timeline</p>
-          <h2>Recent experience, without the noise.</h2>
-        </div>
-        <div class="timeline-card">
-          <div class="timeline-item">
-            <span class="timeline-label">Aug 2021 - Sep 2022</span>
-            <p>IT operations, reporting, customer-facing support, ticketing workflows, SQL basics, and internal technical processes.</p>
-          </div>
-          <div class="timeline-item">
-            <span class="timeline-label">Oct 2022 - Oct 2023</span>
-            <p>Enterprise IT automation, chatbot-related solutions, SQL/API-style workflows, documentation, troubleshooting, and team-based technical delivery.</p>
-          </div>
-          <div class="timeline-item">
-            <span class="timeline-label">Nov 2023 - Feb 2024</span>
-            <p>AI automation and business workflow prototypes, including Brand Insight Engine and Automation Control Plane.</p>
-          </div>
-          <div class="timeline-item">
-            <span class="timeline-label">Mar 2024 - Mar 2025</span>
-            <p>Team-based AI backend and internal agent-style workflow systems: controlled tool access, approvals, audit logs, observability, and human-in-the-loop review.</p>
-          </div>
-          <div class="timeline-item">
-            <span class="timeline-label">Apr 2025 - Present</span>
-            <p>DANIELOZA.AI backend and AI automation work for Danex and other small to mid-sized businesses around Wroclaw: appointments, invoices, reporting, Telegram-based workflows, exports, backups, and practical AI/OCR-assisted processing.</p>
-          </div>
-          <div class="timeline-item">
-            <span class="timeline-label">Best target roles</span>
-            <p>Systems Engineer, Backend Platform Engineer, Python Backend Engineer, AI Infrastructure Engineer.</p>
-          </div>
-        </div>
-      </section>
-
-      <section class="section contact-section" id="contact">
-        <div class="section-heading">
-          <p class="eyebrow">Contact</p>
-          <h2>Want the shortest path to the relevant proof?</h2>
-        </div>
-        <div class="contact-card">
-          <p>
-            The fastest way to evaluate me is through GitHub repositories and a short technical conversation
-            around Python backend work, FastAPI services, MCP-aware systems, runtime governance, and practical AI integrations.
-          </p>
-          <ul class="contact-list">
-            <li>Email: <a href="mailto:kontakt.danieldanek@gmail.com">kontakt.danieldanek@gmail.com</a></li>
-            <li>GitHub: <a href="https://github.com/danieloza" target="_blank" rel="noreferrer">github.com/danieloza</a></li>
-            <li>LinkedIn: <a href="https://www.linkedin.com/in/daniel-danek-aa3853231/" target="_blank" rel="noreferrer">daniel-danek-aa3853231</a></li>
-          </ul>
-        </div>
+      <section class="section contact-section reveal" id="contact" aria-labelledby="contact-heading">
+        <span class="section-badge">Contact</span><h2 id="contact-heading">Let's talk engineering.</h2>
+        <p>Have a Python backend or AI systems project in mind?<br>Send me a message and tell me what you're building.</p>
+        <div class="contact-email"><a href="mailto:kontakt.danieldanek@gmail.com">kontakt.danieldanek@gmail.com</a><button class="copy-button" type="button" aria-label="Copy email address"><svg class="icon" aria-hidden="true"><use href="./assets/icons/tabler-sprite.svg#copy"></use></svg></button></div>
+        <p class="contact-socials"><a href="https://github.com/danieloza" target="_blank" rel="noopener noreferrer">View GitHub</a><span aria-hidden="true">/</span><a href="https://www.linkedin.com/in/daniel-danek-aa3853231/" target="_blank" rel="noopener noreferrer">LinkedIn</a></p>
+        <p class="copy-status" role="status" aria-live="polite"></p>
       </section>
     </main>
+    <footer class="site-footer"><span>© <span id="current-year">2026</span> Daniel Danek</span><span>Built with care. Kept simple.</span></footer>
   </div>
+  <nav class="dock" aria-label="Main navigation">
+    <a href="#top" class="dock-item" aria-label="Home" data-tooltip="Home"><svg class="icon" aria-hidden="true"><use href="./assets/icons/tabler-sprite.svg#home"></use></svg></a>
+    <a href="#experience" class="dock-item" aria-label="Experience" data-tooltip="Experience"><svg class="icon" aria-hidden="true"><use href="./assets/icons/tabler-sprite.svg#briefcase"></use></svg></a>
+    <a href="#projects" class="dock-item" aria-label="Projects" data-tooltip="Projects"><svg class="icon" aria-hidden="true"><use href="./assets/icons/tabler-sprite.svg#code"></use></svg></a>
+    <a href="#stack" class="dock-item" aria-label="Stack" data-tooltip="Stack"><svg class="icon" aria-hidden="true"><use href="./assets/icons/tabler-sprite.svg#stack-2"></use></svg></a>
+    <a href="#contact" class="dock-item" aria-label="Contact" data-tooltip="Contact"><svg class="icon" aria-hidden="true"><use href="./assets/icons/tabler-sprite.svg#mail"></use></svg></a>
+    <span class="dock-separator" aria-hidden="true"></span>
+    <a href="https://github.com/danieloza" class="dock-item" target="_blank" rel="noopener noreferrer" aria-label="View GitHub" data-tooltip="GitHub"><svg class="icon" aria-hidden="true"><use href="./assets/icons/tabler-sprite.svg#brand-github"></use></svg></a>
+    <a href="https://www.linkedin.com/in/daniel-danek-aa3853231/" class="dock-item" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn" data-tooltip="LinkedIn"><svg class="icon" aria-hidden="true"><use href="./assets/icons/tabler-sprite.svg#brand-linkedin"></use></svg></a>
+    <span class="dock-separator" aria-hidden="true"></span>
+    <button type="button" class="dock-item theme-toggle" aria-label="Switch to dark theme" aria-pressed="false" data-tooltip="Theme"><svg class="icon theme-sun" aria-hidden="true"><use href="./assets/icons/tabler-sprite.svg#sun"></use></svg><svg class="icon theme-moon" aria-hidden="true"><use href="./assets/icons/tabler-sprite.svg#moon"></use></svg></button>
+  </nav>
 </body>
 </html>

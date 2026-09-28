@@ -1,0 +1,20 @@
+{
+  "name": "daniel-danek-portfolio",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Static, accessible portfolio inspired by the Magic UI portfolio layout.",
+  "scripts": {
+    "dev": "node scripts/serve.mjs",
+    "assets": "node scripts/prepare-assets.mjs",
+    "build": "node scripts/build.mjs",
+    "test": "playwright test",
+    "audit": "node scripts/audit.mjs",
+    "check": "npm run build && npm test"
+  },
+  "devDependencies": {
+    "@playwright/test": "1.63.0",
+    "@tabler/icons": "3.48.0",
+    "geist": "1.7.2",
+    "lighthouse": "13.5.0"
+  }
+}
