@@ -10,7 +10,7 @@ There is no public CV download. Recruitment CVs are tailored and shared separate
 
 The commercial section describes Azure OpenAI / Azure AI Search prototypes, answer provenance, access control, quality testing, and a Python/JavaScript application for PDF and Excel processing with an explicitly optional model integration. Azure infrastructure experience is scoped to working with Terraform-defined infrastructure and running/diagnosing workloads on AKS, including an AcrPull permission fix for the kubelet identity. It does not claim ownership of the entire cloud platform or enterprise production deployment.
 
-Two anonymized examples also cover AI-assisted SDLC demonstrator validation on Azure (Node.js, automated tests, Playwright, Azure VM / Static Web Apps) and mapping AI Factory requirements to reusable components. They explicitly distinguish fixtures, a working proof of concept, and client-ready integrations. Client names and internal demonstrator names are intentionally omitted.
+Two anonymized examples also cover AI-assisted SDLC demonstrator validation on Azure (Node.js, automated tests, Playwright, Azure VM / Static Web Apps) and mapping requirements for an internal AI application to reusable components. They explicitly distinguish fixtures, a working proof of concept, and client-ready integrations. Client names and internal demonstrator names are intentionally omitted.
 
 ## Run locally
 
