@@ -24,9 +24,12 @@ test('loads with local assets, no JS errors, and no horizontal overflow', async 
 
 test('experience supports mouse and keyboard with accurate details', async ({ page }) => {
   await page.goto('/');
-  await expect(page.getByRole('heading', { name: 'Current role', exact: true })).toBeVisible();
+  await expect(page.getByRole('heading', { name: 'Experience', exact: true })).toBeVisible();
   await expect(page.locator('.experience-item')).toHaveCount(1);
   await expect(page.locator('.experience-item .company-name')).toContainText('Billennium');
+  // The contract ended on 31 October 2026, so nothing on the page may present it as ongoing.
+  await expect(page.locator('.experience-item .experience-date')).toHaveText('Jul 2026 - Oct 2026');
+  await expect(page.locator('#experience')).not.toContainText(/Present|Current role|I work |I focus /);
   await expect(page.locator('#experience')).not.toContainText(/Nokia|RedPanda|Electric Panda|DANIELOZA|Earlier work/i);
   const detail = page.locator('.experience-item').first();
   await detail.locator('summary').click();

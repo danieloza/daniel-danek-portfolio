@@ -1,8 +1,8 @@
 # Daniel Danek Portfolio
 
-Minimal static portfolio inspired by the Magic UI portfolio layout. A narrow reading column, light/dark themes, expandable current experience, six featured projects, and a floating navigation dock. Implemented with HTML, CSS, and small vanilla JavaScript modules; no Next.js runtime is needed.
+Minimal static portfolio inspired by the Magic UI portfolio layout. A narrow reading column, light/dark themes, an expandable experience entry, six featured projects, and a floating navigation dock. Implemented with HTML, CSS, and small vanilla JavaScript modules; no Next.js runtime is needed.
 
-The website's Current role section intentionally shows only the current role at Billennium. Earlier employment and collaboration history is omitted from the page, while independent portfolio and R&D projects remain in their own section. No confidential client names, internal code, or private infrastructure identifiers are published.
+The website's Experience section intentionally shows only the Billennium contract (July to October 2026), written in the past tense. Earlier employment and collaboration history is omitted from the page, while independent portfolio and R&D projects remain in their own section. No confidential client names, internal code, or private infrastructure identifiers are published.
 
 There is no public CV download. Recruitment CVs are tailored and shared separately, not bundled with this website.
 
@@ -31,7 +31,7 @@ npx playwright install chromium
 npm run check
 ```
 
-`npm run assets` assembles the official Tabler icons and self-hosted Geist font, with licenses. The committed public assets allow `npm run build` to stage the website without installing packages. `npm test` checks desktop/mobile layouts, local image loading, current-experience content, keyboard disclosure controls, theme persistence, absence of a public CV, anchors, clipboard feedback, reduced-motion behavior, and the no-JavaScript experience.
+`npm run assets` assembles the official Tabler icons and self-hosted Geist font, with licenses. The committed public assets allow `npm run build` to stage the website without installing packages. `npm test` checks desktop/mobile layouts, local image loading, experience content and dates, keyboard disclosure controls, theme persistence, absence of a public CV, anchors, clipboard feedback, reduced-motion behavior, and the no-JavaScript experience.
 
 `dist/` contains only the public site and asset credits. Development dependencies, test output, and repository metadata are not deployed.
 
