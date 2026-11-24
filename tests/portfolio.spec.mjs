@@ -22,25 +22,21 @@ test('loads with local assets, no JS errors, and no horizontal overflow', async 
   expect(resources.every(url => url.startsWith('http://127.0.0.1'))).toBe(true);
 });
 
-test('experience supports mouse and keyboard with accurate details', async ({ page }) => {
+test('no work history on the page; the project list opens with mouse and keyboard', async ({ page }) => {
   await page.goto('/');
-  await expect(page.getByRole('heading', { name: 'Experience', exact: true })).toBeVisible();
-  await expect(page.locator('.experience-item')).toHaveCount(1);
-  await expect(page.locator('.experience-item .company-name')).toContainText('Billennium');
-  // The contract ended on 31 October 2026, so nothing on the page may present it as ongoing.
-  await expect(page.locator('.experience-item .experience-date')).toHaveText('Jul 2026 - Oct 2026');
-  await expect(page.locator('#experience')).not.toContainText(/Present|Current role|I work |I focus /);
-  await expect(page.locator('#experience')).not.toContainText(/Nokia|RedPanda|Electric Panda|DANIELOZA|Earlier work/i);
-  const detail = page.locator('.experience-item').first();
-  await detail.locator('summary').click();
-  await expect(detail).toHaveAttribute('open', '');
-  await expect(detail.getByText(/AcrPull permission issue/)).toBeVisible();
-  await detail.locator('summary').press('Enter');
-  await expect(detail).not.toHaveAttribute('open', '');
-  await detail.locator('summary').press('Space');
-  await expect(detail).toHaveAttribute('open', '');
-  await page.locator('.more-projects summary').click();
+  // Employment is described only in tailored CVs, never on the public site.
+  await expect(page.locator('#experience')).toHaveCount(0);
+  await expect(page.getByRole('heading', { name: 'Experience', exact: true })).toHaveCount(0);
+  await expect(page.locator('a[href="#experience"]')).toHaveCount(0);
+  await expect(page.locator('body')).not.toContainText(/Billennium/i);
+  const more = page.locator('.more-projects');
+  await more.locator('summary').click();
+  await expect(more).toHaveAttribute('open', '');
   await expect(page.locator('.more-projects-list a')).toHaveCount(6);
+  await more.locator('summary').press('Enter');
+  await expect(more).not.toHaveAttribute('open', '');
+  await more.locator('summary').press('Space');
+  await expect(more).toHaveAttribute('open', '');
 });
 
 test('theme respects system preference and persists a manual choice', async ({ page }) => {
@@ -80,8 +76,8 @@ test('reduced-motion and no-JavaScript keep content accessible', async ({ page, 
   const context = await browser.newContext({ javaScriptEnabled: false });
   const plain = await context.newPage();
   await plain.goto('http://127.0.0.1:8766/');
-  await plain.locator('.experience-item summary').first().click();
-  await expect(plain.getByText(/AcrPull permission issue/)).toBeVisible();
+  await plain.locator('.more-projects summary').click();
+  await expect(plain.locator('.more-projects-list a').first()).toBeVisible();
   expect(await plain.locator('.hero').evaluate(element => getComputedStyle(element).opacity)).toBe('1');
   await context.close();
 });
